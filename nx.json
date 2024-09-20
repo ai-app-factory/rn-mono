@@ -84,6 +84,11 @@
   "targetDefaults": {
     "e2e-ci--**/*": {
       "dependsOn": ["^export"]
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "name": "fbr-gen",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/fbr-gen/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/tools/fbr-gen",
+        "main": "tools/fbr-gen/src/index.ts",
+        "tsConfig": "tools/fbr-gen/tsconfig.lib.json",
+        "assets": [
+          "tools/fbr-gen/*.md",
+          {
+            "input": "./tools/fbr-gen/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/fbr-gen/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/fbr-gen",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./tools/fbr-gen",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}
