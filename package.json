@@ -27,6 +27,7 @@
     "@nx/expo": "19.7.3",
     "@nx/jest": "19.7.3",
     "@nx/js": "19.7.3",
+    "@nx/plugin": "19.7.3",
     "@nx/react-native": "19.7.3",
     "@nx/storybook": "19.7.3",
     "@nx/vite": "19.7.3",
