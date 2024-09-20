@@ -1,0 +1,10 @@
+{
+  "name": "pnpm-expo-rn-mono-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/pnpm-expo-rn-mono-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["pnpm-expo-rn-mono"],
+  "// targets": "to see all targets run: nx show project pnpm-expo-rn-mono-e2e --web",
+  "targets": {}
+}

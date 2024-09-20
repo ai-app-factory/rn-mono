@@ -1,0 +1,18 @@
+{
+  "name": "pnpm-expo-rn-mono",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@nx/react": "^19.7.3",
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "expo": "*",
+    "metro-config": "*",
+    "react-native": "*",
+    "react-native-svg": "*",
+    "react-native-web": "*"
+  },
+  "scripts": {
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/pnpm-expo-rn-mono"
+  }
+}
