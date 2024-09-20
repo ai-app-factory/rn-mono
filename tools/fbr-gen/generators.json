@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "expo-fbr": {
+      "factory": "./src/generators/expo-fbr/generator",
+      "schema": "./src/generators/expo-fbr/schema.json",
+      "description": "expo-fbr generator"
+    }
+  }
+}
