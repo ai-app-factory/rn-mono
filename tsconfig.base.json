@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@pnpm-expo-rn-mono/common-ui": ["libs/common-ui/src/index.ts"],
       "@pnpm-expo-rn-mono/fbr-gen": ["tools/fbr-gen/src/index.ts"]
     }
   },
